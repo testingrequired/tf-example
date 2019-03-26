@@ -1,0 +1,14 @@
+{
+  "name": "@testingrequired/tf-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tf ./my-cli.js"
+  },
+  "author": "Kylee Tilley <kylee@testingrequired.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@testingrequired/tf": "0.0.3"
+  }
+}
