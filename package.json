@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tf ./my-cli.js"
+    "test": "tf suite"
   },
   "author": "Kylee Tilley <kylee@testingrequired.com>",
   "license": "MIT",
   "dependencies": {
-    "@testingrequired/tf": "0.0.3"
+    "@testingrequired/tf": "0.0.7"
   }
 }
