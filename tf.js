@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
-const {
-  default: tf,
+import tf, {
   run,
   defaults,
   specSyntax,
-  matchTestFiles
-} = require("@testingrequired/tf");
+  matchTestFiles,
+  junit
+} from "@testingrequired/tf";
 
-run(tf(defaults, matchTestFiles("./**/*.test.js"), specSyntax));
+run(
+  tf(defaults, matchTestFiles("./**/*.test.js"), specSyntax, junit("junit.xml"))
+);
