@@ -1,12 +1,6 @@
-#!/usr/bin/env node
+import tf, { run, middlewear } from "@testingrequired/tf";
 
-import tf, {
-  run,
-  defaults,
-  specSyntax,
-  matchTestFiles,
-  junit
-} from "@testingrequired/tf";
+const { defaults, matchTestFiles, specSyntax, junit } = middlewear;
 
 run(
   tf(defaults, matchTestFiles("./**/*.test.js"), specSyntax, junit("junit.xml"))
