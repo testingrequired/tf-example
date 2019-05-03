@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node -r esm ./tf.js"
+    "test": "node -r esm ./bin/tf.js"
   },
   "author": "Kylee Tilley <kylee@testingrequired.com>",
   "license": "MIT",
-  "dependencies": {
-    "@testingrequired/tf": "0.0.8"
-  },
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@testingrequired/tf": "0.0.11",
+    "esm": "^3.2.22"
+  }
 }
