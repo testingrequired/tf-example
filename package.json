@@ -8,10 +8,9 @@
   },
   "author": "Kylee Tilley <kylee@testingrequired.com>",
   "license": "MIT",
-  "dependencies": {
-    "@testingrequired/tf": "0.0.12"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@testingrequired/tf": "0.0.21",
     "esm": "^3.2.22"
   }
 }

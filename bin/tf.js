@@ -1,12 +1,7 @@
-import tf, { run, middlewear } from "@testingrequired/tf";
+import { run, pipeline, middlewear } from "@testingrequired/tf";
 
-const { defaults, matchTestFiles, specSyntax, junit } = middlewear;
+const { starter, matchTestFiles, specSyntax, mock } = middlewear;
 
 run(
-  tf(
-    defaults,
-    matchTestFiles("./tests/**/*.test.js"),
-    specSyntax,
-    junit("junit.xml")
-  )
+  pipeline(starter, matchTestFiles("./tests/**/*.test.js"), specSyntax, mock)
 );
