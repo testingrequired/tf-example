@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@testingrequired/tf": "0.0.21",
+    "@testingrequired/tf": "0.0.22",
     "esm": "^3.2.22"
   }
 }

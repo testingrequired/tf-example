@@ -1,7 +1,5 @@
-import { run, pipeline, middlewear } from "@testingrequired/tf";
+import { run, config, middlewear } from "@testingrequired/tf";
 
 const { starter, matchTestFiles, specSyntax, mock } = middlewear;
 
-run(
-  pipeline(starter, matchTestFiles("./tests/**/*.test.js"), specSyntax, mock)
-);
+run(config(starter, matchTestFiles("./tests/**/*.test.js"), specSyntax, mock));
